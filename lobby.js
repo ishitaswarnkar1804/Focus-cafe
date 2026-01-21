@@ -13,7 +13,7 @@ onAuthStateChanged(auth, u => {
 });
 
 const code = localStorage.getItem("roomCode");
-if (!code) location.href = "home.html";
+if (!code) location.href = "index.html";
 
 const themes = {
     rain: "https://giffiles.alphacoders.com/105/105408.gif",

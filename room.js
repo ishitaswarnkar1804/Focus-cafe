@@ -7,7 +7,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
 
 const code = localStorage.getItem("roomCode");
-if (!code) location.href = "home.html";
+if (!code) location.href = "index.html";
 
 const rtcConfig = { iceServers: [{ urls: "stun:stun.l.google.com:19302" }] };
 
@@ -309,5 +309,5 @@ async function stopSharing() {
 
 document.getElementById("leaveBtn").onclick = async () => {
     await deleteDoc(doc(peersCol, uid));
-    location.href = "home.html";
+    location.href = "index.html";
 };

@@ -30,5 +30,5 @@ document.getElementById("googleBtn").onclick = async () => {
 };
 
 onAuthStateChanged(auth, user => {
-    if (user) location.href = "home.html";
+    if (user) location.href = "index.html";
 });
