@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room • Study Café</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="room">
+
+    <div id="bg"></div>
+    <div class="overlay"></div>
+
+    <div class="room-ui">
+
+        <header class="room-header">
+            <div>
+                <h2 id="roomName"></h2>
+                <span id="roomCode"></span>
+            </div>
+            <button id="leaveBtn" class="leave-btn">Leave</button>
+        </header>
+
+        <div id="videoGrid" class="grid"></div>
+
+        <div class="controls">
+            <button id="micBtn" class="off">Mic</button>
+            <button id="camBtn" class="off">Cam</button>
+            <button id="shareBtn">Share</button>
+            <button id="musicBtn" class="off">Music</button>
+        </div>
+
+    </div>
+
+    <script type="module" src="room.js"></script>
+</body>
+
+</html>

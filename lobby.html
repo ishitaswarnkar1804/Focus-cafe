@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lobby • Study Café</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="home">
+    <div class="panel lobby-panel">
+        <header class="home-header">
+            <div class="brand">
+                <span class="logo-dot"></span>
+                Lobby
+            </div>
+            <button id="backBtn" class="link">Back</button>
+        </header>
+
+        <div class="profile">
+            <img id="avatar" />
+            <button id="regen" class="ghost small">Change Avatar</button>
+        </div>
+
+        <input id="displayName" placeholder="Your name" />
+
+        <!-- Vibe selector -->
+        <select id="themeSelect">
+            <option value="rain">Rain Café</option>
+            <option value="night">Night Library</option>
+            <option value="forest">Forest Cabin</option>
+            <option value="lofi">Lo-fi Room</option>
+            <option value="space">Space Room</option>
+        </select>
+
+        <div class="room-preview">
+            <div id="preview" class="preview"></div>
+            <div class="room-meta">
+                <strong id="roomName"></strong>
+                <span id="roomInfo"></span>
+            </div>
+        </div>
+
+        <button id="enterBtn" class="primary big">Enter Room</button>
+    </div>
+
+    <script type="module" src="lobby.js"></script>
+</body>
+
+</html>

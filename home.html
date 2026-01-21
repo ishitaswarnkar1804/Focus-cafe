@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Café</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body class="home">
+    <div class="panel home-panel">
+        <header class="home-header">
+            <div class="brand">
+                <span class="logo-dot"></span>
+                Study Café
+            </div>
+            <button id="logoutBtn" class="link">Log out</button>
+        </header>
+
+        <section class="hero">
+            <h1>Welcome</h1>
+            <p class="muted">Choose a space and start focusing.</p>
+        </section>
+
+        <div class="actions">
+            <button id="createBtn" class="primary big">Create Room</button>
+            <button id="joinBtn" class="ghost big">Join Room</button>
+        </div>
+    </div>
+
+    <!-- Join Modal -->
+    <div id="joinModal" class="modal hidden">
+        <div class="modal-card">
+            <h3>Join a Room</h3>
+            <p class="muted">Enter the room code your friend shared.</p>
+            <input id="roomCodeInput" placeholder="e.g. OPTM5K" />
+            <div class="modal-actions">
+                <button id="cancelJoin" class="ghost">Cancel</button>
+                <button id="confirmJoin">Join</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="home.js"></script>
+</body>
+
+</html>
